@@ -1,15 +1,25 @@
 package ru.leroymerlin.pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import ru.leroymerlin.base.TestBase;
 
-import static com.codeborne.selenide.Selenide.$$x;
-import static com.codeborne.selenide.Selenide.$x;
+import java.time.Duration;
 
-public class StartPage {
+import static com.codeborne.selenide.Selenide.*;
+
+public class StartPage extends TestBase {
+
+
     public String addItemToCart () {
-        SelenideElement item = $$x("//uc-plp-item-new").get(0);
-        String itemName = item.getAttribute("productname");
-        $x(item.getSearchCriteria() + "//button").click();
+        SelenideElement item = $$x("//article[@aria-hidden='false']").get(0);
+        String itemName = item.getAttribute("data-name");
+        item.scrollIntoView(false).click();
+        $x( "//button[@data-button-action='add-to-cart']")
+                .shouldBe(Condition.visible,Duration.ofMillis(WAITING_TIMEOUT)).click();
+        $x("//a[@href='//www.leroymerlin.gr/gr/cart?action=show']")
+                .shouldBe(Condition.visible, Duration.ofMillis(WAITING_TIMEOUT))
+                .click();
         return itemName;
     }
 }

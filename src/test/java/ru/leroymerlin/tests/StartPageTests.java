@@ -5,6 +5,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.leroymerlin.base.TestBase;
 import ru.leroymerlin.helpers.DriverUtils;
+import ru.leroymerlin.pages.StartPage;
 
 import java.time.Duration;
 
@@ -14,12 +15,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static io.qameta.allure.Allure.step;
 
 public class StartPageTests extends TestBase {
+    StartPage startPage = new StartPage();
+
     @Test
     @DisplayName("Page console log should not have errors")
     void consoleShouldNotHaveErrorsTest() {
         step("Open start page", () ->
                 open(""));
-
         step("Console logs should not contain text 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
             String errorText = "SEVERE";
@@ -29,13 +31,12 @@ public class StartPageTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Page title should have empty header text")
+    @DisplayName("Page title should have header text")
     void titleTest() {
-        step("Open url 'https://leroymerlin.ru'", () ->
+        step("Open start page", () ->
                 open(""));
-
-        step("Page title should have empty text ''", () -> {
-            String expectedTitle = "";
+        step("Page title should have text 'Leroy Merlin: Τα πάντα για την ανακαίνιση του σπιτιού σου, σε έναν προορισμό!'", () -> {
+            String expectedTitle = "Leroy Merlin: Τα πάντα για την ανακαίνιση του σπιτιού σου, σε έναν προορισμό!";
             String actualTitle = title();
 
             assertThat(actualTitle).isEqualTo(expectedTitle);
@@ -47,9 +48,8 @@ public class StartPageTests extends TestBase {
     void logoTest() {
         step("Open start page", () ->
                 open(""));
-
         step("Page should have logo image", () -> {
-            $x("//img[@src='/etc/designs/elbrus/images/logo.svg']")
+            $x("//img[@src='/img/logo.svg']")
                     .shouldBe(Condition.visible, Duration.ofMillis(WAITING_TIMEOUT));
 
         });

@@ -10,13 +10,11 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class BasketPage extends TestBase {
     public void openBasketPage () {
-        open("/basket");
-        $x("//a[@href='/basket/']")
-                .shouldBe(Condition.visible, Duration.ofMillis(WAITING_TIMEOUT));
+        open("/cart?action=show");
     }
 
     public void checkItemInBasket (String itemName) {
-        $x("//span[contains(@data-testid,'"+itemName+"']")
+        $x("//h4[contains(text(),'"+itemName+"')]")
                 .shouldBe(Condition.visible, Duration.ofMillis(WAITING_TIMEOUT));
     }
 
