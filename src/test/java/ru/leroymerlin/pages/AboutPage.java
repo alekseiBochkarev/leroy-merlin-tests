@@ -13,8 +13,4 @@ public class AboutPage extends TestBase {
                 .shouldHave(Condition.text(titleText), Duration.ofMillis(WAITING_TIMEOUT));
     }
 
-    public void checkDescriptionShouldHaveText (String descriptionText) {
-        $x("//span/br")
-                .shouldHave(Condition.text(descriptionText), Duration.ofMillis(WAITING_TIMEOUT));
-    }
 }

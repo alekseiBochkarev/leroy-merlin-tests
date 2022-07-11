@@ -22,9 +22,5 @@ public class AboutPageTests extends TestBase {
             String expectedTitle = "Η Ιστορία μας";
             aboutPage.checkTitleShouldHaveText(expectedTitle);
         });
-        step("check description should have description ", () -> {
-            String expectedDescription = "Το 1923, ο Adolphe Leroy και η Rose Merlin, σύζυγοι και συνέταιροι, ανοίγουν ένα κατάστημα με αμερικάνικα στοκ. Αυτή η πρώτη επιτυχία τους ενθαρρύνει και αποφασίζουν να πωλούν προϊόντα κατασκευής και έπιπλα σε χαμηλές τιμές.";
-            aboutPage.checkDescriptionShouldHaveText(expectedDescription);
-        });
     }
 }
