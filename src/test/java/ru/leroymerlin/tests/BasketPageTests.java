@@ -1,9 +1,7 @@
 package ru.leroymerlin.tests;
 
-import com.codeborne.selenide.WebDriverRunner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.Cookie;
 import ru.leroymerlin.base.TestBase;
 import ru.leroymerlin.pages.BasketPage;
 import ru.leroymerlin.pages.StartPage;
@@ -21,7 +19,7 @@ public class BasketPageTests extends TestBase {
     void addItemToCartTest() {
         step("Open start page", () -> {
             open("");
-                });
+        });
         step("add item to cart and check", () -> {
             step("add item to cart", () -> {
                 String itemName = startPage.addItemToCart();
