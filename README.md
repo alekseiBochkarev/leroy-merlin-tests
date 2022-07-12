@@ -1,16 +1,17 @@
 # Автотест Leroy Merlin Greece
-link https://www.leroymerlin.gr/gr
-page_with_curl Содержание:
+### link https://www.leroymerlin.gr/gr
 
-    Code stack
-    Infrastructure stack
-    Реализованные проверки
-    Сборки в Jenkins
-    Запуск из терминала
-    Allure отчет
-    Отчет в Telegram
-    Отчет в Slack
-    Видео пример прохождения тестов
+# Содержание:
+
+   - Code stack
+   - Infrastructure stack
+   - Реализованные проверки
+   - Сборки в Jenkins
+   - Запуск из терминала
+   - Allure отчет
+   - Отчет в Telegram
+   - Отчет в Slack
+   - Видео пример прохождения тестов
 
 computer Code stack
 
