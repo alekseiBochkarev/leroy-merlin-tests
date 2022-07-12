@@ -65,6 +65,9 @@ test
 
 ## :robot: Отчет в Telegram
 - ### Telegram notification message (all results)
+<p align="center">
+<img title="Telegram notification message (all results)" src="images/screenshots/telegram-bot.png">
+</p>
 
 
 ## :robot: Отчет в Slack
