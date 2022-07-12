@@ -1,6 +1,7 @@
 package ru.leroymerlin.tests;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.leroymerlin.base.TestBase;
 import ru.leroymerlin.pages.AboutPage;
@@ -13,6 +14,7 @@ public class AboutPageTests extends TestBase {
     AboutPage aboutPage = new AboutPage();
 
     @Test
+    @Tag("smoke")
     @DisplayName("title and desctiption should have text")
     void titleAndDescriptionTest() {
         step("Open about page", () ->

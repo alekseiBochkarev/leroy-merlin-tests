@@ -2,6 +2,7 @@ package ru.leroymerlin.tests;
 
 import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.leroymerlin.base.TestBase;
 import ru.leroymerlin.helpers.DriverUtils;
@@ -18,6 +19,7 @@ public class StartPageTests extends TestBase {
     StartPage startPage = new StartPage();
 
     @Test
+    @Tag("smoke")
     @DisplayName("Page console log should not have errors")
     void consoleShouldNotHaveErrorsTest() {
         step("Open start page", () ->
@@ -31,6 +33,7 @@ public class StartPageTests extends TestBase {
     }
 
     @Test
+    @Tag("smoke")
     @DisplayName("Page title should have header text")
     void titleTest() {
         step("Open start page", () ->
@@ -44,6 +47,7 @@ public class StartPageTests extends TestBase {
     }
 
     @Test
+    @Tag("smoke")
     @DisplayName("Page should have logo image")
     void logoTest() {
         step("Open start page", () ->
