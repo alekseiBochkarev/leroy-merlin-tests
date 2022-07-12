@@ -13,7 +13,7 @@
 - <a href="#robot-отчет-в-telegram">Отчет в Telegram</a>
 - <a href="#film_projector-видео-пример-прохождения-тестов">Видео пример прохождения тестов</a>
 
-## :computer: Code stack
+## :computer: Стек разработки
 <p align="left">
 <img width="6%" title="Java" src="images/logo/Java.svg">
 <img width="6%" title="Selenide" src="images/logo/Selenide.svg">
@@ -22,7 +22,7 @@
 <img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
 </p>
 
-## :computer: Infrastructure stack
+## :computer: Инфраструктура
 <p align="left">
 <img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
 <img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
