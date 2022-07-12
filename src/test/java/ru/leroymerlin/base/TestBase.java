@@ -37,7 +37,7 @@ public class TestBase {
                         .put("browserSize", Configuration.browserSize)
                         .put("global environment", System.getenv().toString())
                         .build(), System.getProperty("user.dir")
-                        + "/allure-results/");
+                        + "build/allure-results/");
     }
 
     @BeforeEach
