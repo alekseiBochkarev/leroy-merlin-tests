@@ -15,6 +15,7 @@ import ru.leroymerlin.helpers.DriverUtils;
 
 @ExtendWith({AllureJunit5.class})
 public class TestBase {
+    /**** SETTINGS ****/
     public static final long WAITING_TIMEOUT = 10000;
 
     @BeforeAll

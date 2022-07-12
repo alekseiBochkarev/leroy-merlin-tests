@@ -10,10 +10,9 @@ import java.util.Map;
 
 public class DriverSettings {
     public static void configure() {
-        Configuration.browser = Project.config.browser();
-        Configuration.browserVersion = Project.config.browserVersion();
-        Configuration.browserSize = Project.config.browserSize();
-        Configuration.baseUrl = Project.config.workingHost();
+        Configuration.browser = Project.config().browser();
+        Configuration.browserSize = Project.config().browserSize();
+        Configuration.baseUrl = Project.config().workingHost();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         ChromeOptions chromeOptions = new ChromeOptions();
@@ -26,14 +25,14 @@ public class DriverSettings {
 
         if (Project.isWebMobile()) { // for chrome only
             Map<String, Object> mobileDevice = new HashMap<>();
-            mobileDevice.put("deviceName", Project.config.browserMobileView());
+            mobileDevice.put("deviceName", Project.config().browserMobileView());
             chromeOptions.setExperimentalOption("mobileEmulation", mobileDevice);
         }
 
         if (Project.isRemoteWebDriver()) {
             capabilities.setCapability("enableVNC", true);
             capabilities.setCapability("enableVideo", true);
-            Configuration.remote = Project.config.remoteDriverUrl();
+            Configuration.remote = Project.config().remoteDriverUrl();
         }
 
         capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
