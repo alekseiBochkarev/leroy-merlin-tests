@@ -41,6 +41,15 @@
     
 ## :robot: Сборки в Jenkins
 ### <a target="_blank" href="https://jenkins.autotests.cloud/view/C12-BochkarevAlexej/job/C12-BochkarevAlexej-leroy-tests/">Параметризированная сборка в Jenkins</a>
+*Для запуска сборки необходимо указать значения параметров и нажать кнопку <code><strong>*Собрать с параметрами*</strong></code>.*
+
+<p align="center">
+  <img src="images/screenshots/Jenkins.png" alt="job" width="800">
+</p>
+
+<p align="center">
+  <img src="images/screenshots/Jenkins2.png" alt="job" width="800">
+</p>
 
 ## :keyboard: Запуск из терминала
 Локальный запуск всех тестов:
