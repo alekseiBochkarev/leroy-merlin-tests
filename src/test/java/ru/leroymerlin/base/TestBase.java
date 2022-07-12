@@ -1,7 +1,9 @@
 package ru.leroymerlin.base;
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import com.google.common.collect.ImmutableMap;
 import io.qameta.allure.junit5.AllureJunit5;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
@@ -13,6 +15,8 @@ import ru.leroymerlin.helpers.AllureAttachments;
 import ru.leroymerlin.helpers.DriverSettings;
 import ru.leroymerlin.helpers.DriverUtils;
 
+import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnvironmentWriter;
+
 @ExtendWith({AllureJunit5.class})
 public class TestBase {
     /**** SETTINGS ****/
@@ -21,6 +25,18 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         DriverSettings.configure();
+        setAllureEnvironment();
+    }
+
+    private static void setAllureEnvironment()
+    {
+        allureEnvironmentWriter(
+                ImmutableMap.<String, String>builder()
+                        .put("Working Host", Configuration.baseUrl)
+                        .put("browser", Configuration.browser)
+                        .put("browserSize", Configuration.browserSize)
+                        .put("global environment", System.getenv().toString())
+                        .build());
     }
 
     @BeforeEach
