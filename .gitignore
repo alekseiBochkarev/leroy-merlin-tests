@@ -40,3 +40,5 @@ target/
 /gradlew.bat
 .todo
 *.properties
+
+!allure-notifications-4.1.jar
