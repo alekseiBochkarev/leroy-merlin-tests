@@ -61,10 +61,22 @@ gradle clean test -Denv=config/local
 ```
 clean
 test
+ -Denv=${ENV}
  -Dbrowser=${BROWSER}
  -DbrowserSize=${BROWSER_SIZE}
  -DworkingHost=${WORKINGHOST}
  ```
+
+### Параметры сборки
+
+> <code>ENV</code> – окружение, в котором буду запускаться тесты (локально или удаленно) (_по умолчанию - <code>remote</code>_).
+>
+> <code>BROWSER</code> – браузер, в котором будут выполняться тесты (_по умолчанию - <code>chrome</code>_).
+>
+> <code>BROWSER_SIZE</code> – разрешени окна браузера, в котором будут выполняться тесты (_по умолчанию - <code>1920x1080</code>_).
+>
+> <code>WORKINGHOST</code> – адрес ресурса, который будет проветестирован.
+>
 
 ## :bar_chart: Allure отчет
 - ### Главный экран отчета
