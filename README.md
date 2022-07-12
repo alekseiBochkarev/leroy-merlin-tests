@@ -69,11 +69,6 @@ test
 <img title="Telegram notification message (all results)" src="images/screenshots/telegram-bot.png">
 </p>
 
-
-## :robot: Отчет в Slack
-- ### Slack notification message (only failed tests)
-
-
 ## :film_projector: Видео пример прохождения тестов
 > К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
 <p align="center">
