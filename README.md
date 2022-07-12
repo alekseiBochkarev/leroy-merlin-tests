@@ -59,9 +59,14 @@ test
 
 ## :bar_chart: Allure отчет
 - ### Главный экран отчета
-    
-- ### Страница с проведенными тестами
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/screenshots/allure-main-page.png">
+</p>
 
+- ### Страница с проведенными тестами
+<p align="center">
+<img title="Allure Test Page" src="images/screenshots/allure-test-page.png">
+</p>
 
 ## :robot: Отчет в Telegram
 - ### Telegram notification message (all results)
