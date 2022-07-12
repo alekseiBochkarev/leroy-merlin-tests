@@ -44,11 +44,11 @@
 *Для запуска сборки необходимо указать значения параметров и нажать кнопку <code><strong>*Собрать с параметрами*</strong></code>.*
 
 <p align="center">
-  <img src="images/screenshots/Jenkins.png" alt="job" width="800">
+  <img src="images/screenshots/Jenkins.png">
 </p>
 
 <p align="center">
-  <img src="images/screenshots/Jenkins2.png" alt="job" width="800">
+  <img src="images/screenshots/Jenkins2.png">
 </p>
 
 ## :keyboard: Запуск из терминала
