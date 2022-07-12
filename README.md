@@ -4,8 +4,8 @@
 
 ## :page_with_curl: Содержание:
 
-- <a href="#computer-сode_stack">Code stack</a>
-- <a href="#computer-infrastructure_stack">Infrastructure stack</a>
+- <a href="#computer-сode_stack">Стек разработки</a>
+- <a href="#computer-infrastructure_stack">Инфраструктура</a>
 - <a href="#clipboard-реализованные-проверки">Реализованные проверки</a>
 - <a href="#robot-сборки-в-Jenkins">Сборки в Jenkins</a>
 - <a href="#keyboard-запуск-из-терминала">Запуск из терминала</a>
@@ -74,7 +74,7 @@ test
 >
 > <code>BROWSER_SIZE</code> – разрешени окна браузера, в котором будут выполняться тесты (_по умолчанию - <code>1920x1080</code>_).
 >
-> <code>WORKINGHOST</code> – адрес ресурса, который будет проветестирован.
+> <code>WORKINGHOST</code> – адрес ресурса, который будет протестирован.
 >
 
 ## :bar_chart: Allure отчет
@@ -89,7 +89,7 @@ test
 </p>
 
 ## :robot: Отчет в Telegram
-- ### Telegram notification message (all results)
+- ### Telegram оповещение
 <p align="center">
 <img title="Telegram notification message (all results)" src="images/screenshots/telegram-bot.png">
 </p>

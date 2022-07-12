@@ -16,7 +16,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static io.qameta.allure.Allure.step;
 
 public class StartPageTests extends TestBase {
-    StartPage startPage = new StartPage();
 
     @Test
     @Tag("smoke")
