@@ -40,6 +40,7 @@
   -  Проверка функции добавления товара в корзину
     
 ## :robot: Сборки в Jenkins
+### <a target="_blank" href="https://jenkins.autotests.cloud/view/C12-BochkarevAlexej/job/C12-BochkarevAlexej-leroy-tests/">Параметризированная сборка в Jenkins</a>
 
 ## :keyboard: Запуск из терминала
 Локальный запуск всех тестов:
