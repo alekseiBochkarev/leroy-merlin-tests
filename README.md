@@ -88,6 +88,12 @@ test
 <img title="Allure Test Page" src="images/screenshots/allure-test-page.png">
 </p>
 
+## :hammer: Allure Test Ops отчет
+<p align="center">
+<img title="Allure Test Ops Launch" src="images/allureLeroyMerlinLaunch.png">
+<img title="Allure Test Ops Dashboard" src="images/AllureLeroyDashboard.png">
+</p>
+
 ## :robot: Отчет в Telegram
 - ### Telegram оповещение
 <p align="center">
