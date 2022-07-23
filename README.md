@@ -1,4 +1,6 @@
 # Автотест Leroy Merlin Greece
+<img title="Leroy img" src="images/leroySite.png">
+
 ## :link:  <a target="_blank" href=https://www.leroymerlin.gr/gr>Leroy Merlin Greece</a>
 
 
