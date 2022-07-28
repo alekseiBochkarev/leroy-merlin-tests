@@ -25,7 +25,6 @@ public class StartPageTests extends TestBase {
         step("Console logs should not contain text 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
             String errorText = "SEVERE";
-
             assertThat(consoleLogs).doesNotContain(errorText);
         });
     }
@@ -39,7 +38,6 @@ public class StartPageTests extends TestBase {
         step("Page title should have text 'Leroy Merlin: Τα πάντα για την ανακαίνιση του σπιτιού σου, σε έναν προορισμό!'", () -> {
             String expectedTitle = "Leroy Merlin: Τα πάντα για την ανακαίνιση του σπιτιού σου, σε έναν προορισμό!";
             String actualTitle = title();
-
             assertThat(actualTitle).isEqualTo(expectedTitle);
         });
     }
@@ -53,7 +51,6 @@ public class StartPageTests extends TestBase {
         step("Page should have logo image", () -> {
             $x("//img[@src='/img/logo.svg']")
                     .shouldBe(Condition.visible, Duration.ofMillis(WAITING_TIMEOUT));
-
         });
     }
 }
