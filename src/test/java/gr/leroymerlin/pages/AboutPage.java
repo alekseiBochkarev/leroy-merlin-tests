@@ -1,12 +1,11 @@
-package ru.leroymerlin.pages;
+package gr.leroymerlin.pages;
 
 import com.codeborne.selenide.Condition;
-import ru.leroymerlin.base.TestBase;
+import gr.leroymerlin.base.TestBase;
 
 import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$x;
 
 public class AboutPage extends TestBase {
     public void checkTitleShouldHaveText(String titleText) {

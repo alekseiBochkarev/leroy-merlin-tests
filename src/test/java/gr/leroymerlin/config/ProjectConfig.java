@@ -1,4 +1,4 @@
-package ru.leroymerlin.config;
+package gr.leroymerlin.config;
 
 import org.aeonbits.owner.Config;
 

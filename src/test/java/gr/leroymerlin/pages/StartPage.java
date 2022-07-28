@@ -1,8 +1,8 @@
-package ru.leroymerlin.pages;
+package gr.leroymerlin.pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import ru.leroymerlin.base.TestBase;
+import gr.leroymerlin.base.TestBase;
 
 import java.time.Duration;
 

@@ -1,4 +1,4 @@
-package ru.leroymerlin.helpers;
+package gr.leroymerlin.helpers;
 
 import io.qameta.allure.Allure;
 import io.qameta.allure.Attachment;

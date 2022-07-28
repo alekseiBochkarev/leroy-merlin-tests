@@ -1,19 +1,19 @@
-package ru.leroymerlin.base;
+package gr.leroymerlin.base;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.google.common.collect.ImmutableMap;
+import gr.leroymerlin.config.Project;
+import gr.leroymerlin.helpers.AllureAttachments;
+import gr.leroymerlin.helpers.DriverSettings;
+import gr.leroymerlin.helpers.DriverUtils;
 import io.qameta.allure.junit5.AllureJunit5;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
-import ru.leroymerlin.config.Project;
-import ru.leroymerlin.helpers.AllureAttachments;
-import ru.leroymerlin.helpers.DriverSettings;
-import ru.leroymerlin.helpers.DriverUtils;
 
 import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnvironmentWriter;
 

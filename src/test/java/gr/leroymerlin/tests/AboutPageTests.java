@@ -1,10 +1,10 @@
-package ru.leroymerlin.tests;
+package gr.leroymerlin.tests;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import ru.leroymerlin.base.TestBase;
-import ru.leroymerlin.pages.AboutPage;
+import gr.leroymerlin.base.TestBase;
+import gr.leroymerlin.pages.AboutPage;
 
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;

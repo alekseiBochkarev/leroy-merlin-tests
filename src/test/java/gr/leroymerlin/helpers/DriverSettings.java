@@ -1,9 +1,9 @@
-package ru.leroymerlin.helpers;
+package gr.leroymerlin.helpers;
 
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import ru.leroymerlin.config.Project;
+import gr.leroymerlin.config.Project;
 
 import java.util.HashMap;
 import java.util.Map;
