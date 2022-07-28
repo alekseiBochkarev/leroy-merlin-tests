@@ -5,12 +5,12 @@ import ru.leroymerlin.base.TestBase;
 
 import java.time.Duration;
 
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class AboutPage extends TestBase {
-    public void checkTitleShouldHaveText (String titleText) {
-        $x("//h1")
-                .shouldHave(Condition.text(titleText), Duration.ofMillis(WAITING_TIMEOUT));
+    public void checkTitleShouldHaveText(String titleText) {
+        $("h1").shouldHave(Condition.text(titleText), Duration.ofMillis(WAITING_TIMEOUT));
     }
 
 }

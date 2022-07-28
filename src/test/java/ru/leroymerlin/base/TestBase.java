@@ -28,8 +28,7 @@ public class TestBase {
         setAllureEnvironment();
     }
 
-    private static void setAllureEnvironment()
-    {
+    private static void setAllureEnvironment() {
         allureEnvironmentWriter(
                 ImmutableMap.<String, String>builder()
                         .put("Working Host", Configuration.baseUrl)

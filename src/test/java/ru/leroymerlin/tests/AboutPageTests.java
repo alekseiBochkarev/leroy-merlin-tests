@@ -19,7 +19,6 @@ public class AboutPageTests extends TestBase {
     void titleAndDescriptionTest() {
         step("Open about page", () ->
                 open("/company"));
-
         step("check title should have text 'Η Ιστορία μας'", () -> {
             String expectedTitle = "Η Ιστορία μας";
             aboutPage.checkTitleShouldHaveText(expectedTitle);

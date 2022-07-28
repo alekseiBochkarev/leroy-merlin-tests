@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.leroymerlin.base.TestBase;
 import ru.leroymerlin.helpers.DriverUtils;
-import ru.leroymerlin.pages.StartPage;
 
 import java.time.Duration;
 
